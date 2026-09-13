@@ -1,57 +1,62 @@
 # This file contains metadata for your plugin.
-
-# This file should be included when you package your plugin.# Mandatory items:
+# This file should be included when you package your plugin.
 
 [general]
-name=3D Distance
+name=Distance_3D
 qgisMinimumVersion=3.0
-description=DE: Beschrifte einen Layer mit der 3D Länge und dem Azimut. EN: Label a Layer with the 3D length and the Azimuth
+description=DE: Beschrifte einen Layer mit der 3D-Länge und dem Azimut. EN: Label a layer with the 3D length and azimuth.
 version=1.0
 author=michaels
 email=michael.stoeckeler@outlook.de
 
-about=DE: 3D Distance ist ein QGIS-Plugin zur Berechnung und Beschriftung dreidimensionaler Linienlängen auf Grundlage eines digitalen Geländemodells (DEM). Das Plugin unterstützt drei Berechnungsmethoden: kartesisch, ellipsoidisch sowie geozentrisch/ECEF. Bei Linien mit mehreren Stützpunkten werden die 3D-Längen der einzelnen Segmente berechnet und zu einer Gesamtlänge addiert.
+about=DE: 3D Distance ist ein QGIS-Plugin zur Berechnung und Beschriftung dreidimensionaler Linienlängen auf Grundlage eines digitalen Geländemodells (DEM).
+    Das Plugin unterstützt drei Berechnungsmethoden: kartesisch, ellipsoidisch sowie geozentrisch/ECEF.
+    Bei Linien mit mehreren Stützpunkten werden die 3D-Längen der einzelnen Segmente berechnet und zu einer Gesamtlänge addiert.
 
-Zusätzlich können geografische und magnetische Azimute in Grad oder Gon berechnet und als Attribute gespeichert werden. Die magnetische Deklination wird offline und CRS-unabhängig mit dem World Magnetic Model 2025 (WMM2025) bestimmt. Für jede Berechnungsart werden eigene Attributfelder erzeugt, sodass unterschiedliche Ergebnisse parallel erhalten bleiben.
+    Zusätzlich können geografische und magnetische Azimute in Grad oder Gon berechnet und als Attribute gespeichert werden.
+    Die magnetische Deklination wird offline und CRS-unabhängig mit dem World Magnetic Model 2025 (WMM2025) bestimmt.
+    Für jede Berechnungsart werden eigene Attributfelder erzeugt, sodass unterschiedliche Ergebnisse parallel erhalten bleiben.
 
-Die berechnete 3D-Länge kann zusammen mit dem geografischen oder magnetischen Azimut direkt als Linienbeschriftung dargestellt werden. Grad und Gon können unabhängig ausgewählt werden. Beachte, dass bei Linien mit mehreren Segmenten der Azimut des Start- und Endpunktes der gesamten Linie berechnet und dargestellt wird.
+    Die berechnete 3D-Länge kann zusammen mit dem geografischen oder magnetischen Azimut direkt als Linienbeschriftung dargestellt werden.
+    Grad und Gon können unabhängig ausgewählt werden.
+    Beachte, dass bei Linien mit mehreren Segmenten der Azimut des Start- und Endpunktes der gesamten Linie berechnet und dargestellt wird.
 
-EN:Distance 3D is a QGIS plugin for calculating and labeling three-dimensional line lengths based on a digital elevation model (DEM). The plugin supports three calculation methods: Cartesian, ellipsoidal, and geocentric/ECEF. For lines containing multiple vertices, the 3D length of each individual segment is calculated and summed to obtain the total line length.
+    EN: Distance 3D is a QGIS plugin for calculating and labeling three-dimensional line lengths based on a digital elevation model (DEM).
+    The plugin supports three calculation methods: Cartesian, ellipsoidal, and geocentric/ECEF.
+    For lines containing multiple vertices, the 3D length of each individual segment is calculated and summed to obtain the total line length.
 
-In addition, geographic and magnetic azimuths can be calculated in degrees or gon and stored as attributes. Magnetic declination is calculated offline and independently of the project CRS using the World Magnetic Model 2025 (WMM2025). Separate attribute fields are created for each calculation method, allowing different results to be stored simultaneously.
+    In addition, geographic and magnetic azimuths can be calculated in degrees or gon and stored as attributes.
+    Magnetic declination is calculated offline and independently of the project CRS using the World Magnetic Model 2025 (WMM2025).
+    Separate attribute fields are created for each calculation method, allowing different results to be stored simultaneously.
 
-The calculated 3D length can be displayed together with either the geographic or magnetic azimuth as a line label. Degrees and gon can be selected independently. Note that for lines containing multiple segments the azimuth of the starting point and the end point of the entire line is calculated and displayed.
+    The calculated 3D length can be displayed together with either the geographic or magnetic azimuth as a line label.
+    Degrees and gon can be selected independently.
+    Note that for lines containing multiple segments, the azimuth between the start point and the end point of the entire line is calculated and displayed.
 
 tracker=https://github.com/Legarsov/3D-Distance-Plugin-for-QGis/issues
 repository=https://github.com/Legarsov/3D-Distance-Plugin-for-QGis
-# End of mandatory metadata
-
-# Recommended items:
 
 hasProcessingProvider=no
-# Uncomment the following line and add your changelog:
-# changelog=
 
 # Tags are comma separated with spaces allowed
-tags=distance, labeling, layers, polyline, line
+tags=distance, labeling, layers, polyline, line, dem, azimuth, 3d
 
 homepage=
-category=Plugins
+category=Vector
 icon=icon.png
+
 # experimental flag
 experimental=False
 
-# deprecated flag (applies to the whole plugin, not just a single version)
+# deprecated flag
 deprecated=False
 
 # Since QGIS 3.8, a comma separated list of plugins to be installed
 # (or upgraded) can be specified.
-# Check the documentation for more information.
 # plugin_dependencies=
 
-Category of the plugin: Raster, Vector, Database or Web
+# Category of the plugin: Raster, Vector, Database or Web
 # category=
 
 # If the plugin can run on QGIS Server.
 server=False
-
