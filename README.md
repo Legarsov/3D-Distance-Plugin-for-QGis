@@ -4,7 +4,7 @@ Deutsch
 
 Übersicht
 
-Distance 3D ist ein QGIS-Plugin zur Berechnung und Beschriftung dreidimensionaler Linienlängen auf Grundlage eines digitalen Geländemodells (DEM).
+3D Distance ist ein QGIS-Plugin zur Berechnung und Beschriftung dreidimensionaler Linienlängen auf Grundlage eines digitalen Geländemodells (DEM).
 
 Das Plugin unterstützt drei unterschiedliche Berechnungsmethoden:
 
@@ -168,7 +168,7 @@ English
 
 Overview
 
-Distance 3D is a QGIS plugin for calculating and labeling three-dimensional line lengths based on a digital elevation model (DEM).
+3D Distance is a QGIS plugin for calculating and labeling three-dimensional line lengths based on a digital elevation model (DEM).
 
 The plugin supports three calculation methods:
 
