@@ -164,6 +164,9 @@ Lizenz
 
 Dieses Plugin wurde mit dem QGIS Plugin Builder erstellt und steht unter der in den Plugin-Dateien angegebenen Lizenz.
 
+
+
+
 English
 
 Overview
