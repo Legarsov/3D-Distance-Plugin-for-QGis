@@ -41,7 +41,7 @@ hasProcessingProvider=no
 # Tags are comma separated with spaces allowed
 tags=distance, labeling, layers, polyline, line, dem, azimuth, 3d
 
-homepage=
+homepage=https://github.com/Legarsov/3D-Distance-Plugin-for-QGis
 category=Vector
 icon=icon.png
 
